@@ -36,6 +36,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: #161B22;
+    margin: 0 0 48px 0;
 }
 
 main {
@@ -96,5 +97,49 @@ footer {
     height: 37px;
 }
 
+// Task
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 74px;
+    border-radius: 12px;
+    margin: 48px 0 48px 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    background-color: #072079;
+    border-radius: 12px;
+    .card-title {
+        font-family: MontserratextraBold;
+        color: white;
+        font-size: 24px;
+    }
+    .card-value {
+        font-family: MontserratMedium;
+        color: gray;
+        font-size: 22px;
+
+    }
+}
+
+.check-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    background-color: #072079;
+    border-radius: 12px;
+    .check-img {
+        width: 65%;
+        height: 65%;
+    }
+}
 
 
