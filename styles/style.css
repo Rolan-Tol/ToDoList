@@ -144,25 +144,38 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 92%;
-  background-color: #072079;
+  background: -webkit-gradient(linear, left top, right top, from(#152244), to(#162147));
+  background: linear-gradient(to right, #152244, #162147);
   border-radius: 12px;
+  position: relative;
+}
+.card .card-setting {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+}
+.card .card-setting svg {
+  width: 60px;
+  height: 60px;
+}
+.card .card-setting g {
+  fill: #1B78EF;
 }
 .card .card-title {
   font-family: MontserratextraBold;
   color: white;
   font-size: 24px;
+  margin: 0 20px 0 20px;
 }
 .card .card-value {
   font-family: MontserratMedium;
   color: gray;
   font-size: 22px;
+  padding: 0 30px 0 0;
 }
 
 .check-box {
@@ -177,10 +190,17 @@ footer {
           align-items: center;
   width: 74px;
   height: 74px;
-  background-color: #072079;
+  background-color: #162147;
   border-radius: 12px;
+}
+.check-box svg {
+  width: 47px;
+  height: auto;
 }
 .check-box .check-img {
   width: 65%;
   height: 65%;
+}
+.check-box .card-check {
+  fill: #1B78EF;
 }
