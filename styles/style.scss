@@ -26,6 +26,7 @@ body {
     padding: 0;
     background-color: #0D1117;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #wrap {
@@ -63,6 +64,7 @@ main {
 
 .main-input {
     display: flex;
+    position: relative;
     input {
         display: flex;
         flex-direction: row;
@@ -74,12 +76,18 @@ main {
         padding: 35px;
         background-color: transparent;
         border: 2px solid #42464b;
+        border-radius: 12px 12px 12px 12px;
+        transition: 0.5s;
+    }
+    input.visible {
+        width: 80%;
         border-radius: 12px 0 0 12px;
+        transition: 0.5s;
     }
     input::placeholder {
         color: #2d3033;
     }
-    button {
+    .create {
         font-family: MontserratExtraBold;
         font-size: 22px;
         color: white;
@@ -88,6 +96,14 @@ main {
         border: none;
         border-radius: 0 12px 12px 0;
         cursor: pointer;
+        height: 74px;
+        position: absolute;
+        right: -500px;
+        transition: 0.5s;
+    }
+    .create.visible {
+        right: 0 !important;
+        transition: 0.5s;
     }
 }
 

@@ -24,6 +24,7 @@ body {
   padding: 0;
   background-color: #0D1117;
   height: 100%;
+  overflow-x: hidden;
 }
 
 #wrap {
@@ -76,6 +77,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .main-input input {
   display: -webkit-box;
@@ -93,7 +95,15 @@ main {
   padding: 35px;
   background-color: transparent;
   border: 2px solid #42464b;
+  border-radius: 12px 12px 12px 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-input input.visible {
+  width: 80%;
   border-radius: 12px 0 0 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .main-input input::-webkit-input-placeholder {
   color: #2d3033;
@@ -110,7 +120,7 @@ main {
 .main-input input::placeholder {
   color: #2d3033;
 }
-.main-input button {
+.main-input .create {
   font-family: MontserratExtraBold;
   font-size: 22px;
   color: white;
@@ -119,6 +129,16 @@ main {
   border: none;
   border-radius: 0 12px 12px 0;
   cursor: pointer;
+  height: 74px;
+  position: absolute;
+  right: -500px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-input .create.visible {
+  right: 0 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer {
